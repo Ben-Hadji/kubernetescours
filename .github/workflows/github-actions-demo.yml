@@ -13,7 +13,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install pytest
-      - name: Run job.py
-        run: python job.py
+      - name: Run test_average.py
+        run: python test_average.py
       - name: Run tests
         run: pytest
