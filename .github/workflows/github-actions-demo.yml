@@ -4,9 +4,7 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Run ls
-        run: ls
+      - uses: actions/checkout@v2
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
@@ -17,3 +15,5 @@ jobs:
           pip install pytest
       - name: Run job.py
         run: python job.py
+      - name: Run tests
+        run: pytest
